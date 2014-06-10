@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link href ="css/jquery.mobile.min.css" rel ="stylesheet" type="text/css">
+	<link href ="css/jquery.mobile.structure.min.css" rel ="stylesheet" type="text/css">
+	<script src ="js/jquery.min.js"></script>
+	<script src ="js/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+<div data-role = "page" id="page1">
+	<div role="main" class="ui-content" style="text-align:center">
+		<h1> Lotus Flower Shop </h1>
+		<img src="gambar/lotus-flower-logo.jpg" align= "center"/>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-insert="false">
+				<h3>  </h3>
+				<ul data-role="listview">
+			
+					<li><a href = "#page2">About Me </a> </li>
+					<li><a href = "#page3">Promotion </a> </li>
+					<li><a href = "#page4">Contact Us </a> </li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<div data-role ="footer" date-position="fixed">	
+		<h4> CopyRight @ Taasha Florist </h4>	
+	</div>
+</div>
+<div data-role="page" id="page2" style="text-align:center">
+	<div data-role="header" data-position="fixed" data-add-back-btn="true">
+		<h4>Lotus Flower Shop</h4>	
+		<a href = "#page1" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+        <div role="main" class="ui-content">
+				<h2>About Me :</h2>
+				Blooming Florist began operations in 1981 and is managed by May and Martin Cheah. By God's grace, Blooming Florist has won many awards through the years and it has grown. Blooming is now linked with most reliable florists throughout Malaysia. Blooming is also networked with more than 100,000 florists worldwide through its membership in Interflora Pacific Unit Limited. As such, we can deliver flowers throughout Malaysia and worldwide.
+We are and have been Malaysia's reliable florist for many years and with your support we will remain so for many more years to come. Our commitment to our mission statement, ie to provide our customers QUALITY FLOWERS and QUALITY SERVICE has been maintained consistently through the years and our growth through the years is testimonial of this commitment.
+We are grateful  to God and we praise Him for His love, grace, mercies and blessings. 
+Kind regards,
+May Cheah
+				<h2>Award :</h2>
+				<p> Blooming Florist Sdn Bhd has been around in the market for years. Quality Products, Good Services, Instant Delivery and etc. has won Blooming.com.my many awards. </p>				
+		</div>	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+			<li><a href = "#page2" data-icon="grid" data-transition="flow"> About Me </a></li>
+			<li><a href = "#page3" data-icon="star" class-"ui-btn-active ui-state-persist" data-transition="flow">Promotion</a></li>
+			<li><a href = "#page4" data-icon="gear" data-transition="flow"> Contact Us </a></li>
+		</ul>
+	    </div>			
+	</div>
+
+	<a href="#pop1" class="ui-btn ui-btn-inline" data-transition="slide"" data-rel="popup" text-align: "center">List Of Awards </a>
+		<div data-role="popup" id="pop1" data-dismissible="false">
+		  <a href= "#" data-rel = "back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+			<div data-role="header">
+			<h3>Objektif</h3>
+			</div>
+		<div role="main" class="ui-content" style="text-align:center">
+		 <ol>
+		 <li>Superbrands Malaysia 2003 / 2004  </li>
+		 <li>Asia Pacific e-EntrepreneurExcellence Award </li>
+		 <li>Golden Bull Award 2005</li>
+		 </ol>
+		 <a href="#" class="ui-btn-corner-all ui-shadow" data-rel="back"> Back </a>
+		 </div>
+		 
+		</div>
+</div>	
+
+<div data-role="page" id="page3" style="text-align:center">
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+		<h4>Product</h4>	
+	</div>
+			<div role="main" class="ui-content">				
+						<h2>Valentine Special Promotion</h2>									
+							<img src="gambar/flow1.jpg" >
+							<h2>HB68 : Paris Ferrero</h2>
+							<p>A special & classy Hand Bouquet using 16 Ferrero Rocher Chocolates, 12 Roses plus fresh flowers & foliages with coordinated accesories.</p>							
+													
+							<img src="gambar/flow2.jpg" >
+							<h2>HB162 : Callie</h2>
+							<p>24 Red Roses in a Hand Bouquet, Anagram "I Love You" Balloon & Beryls Heart Shape Chocolate (100g).</p>											  		
+			</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+			<li><a href = "#page2" data-icon="grid" data-transition="flow"> About Me </a></li>
+			<li><a href = "#page3" data-icon="star" class-"ui-btn-active ui-state-persist" data-transition="flow"> Promotion </a></li>
+			<li><a href = "#page4" data-icon="gear" data-transition="flow"> Contact Us </a></li>
+		</ul>
+	    </div>			
+	</div>
+		
+	<a href="#pop1" class="ui-btn ui-btn-inline" data-transition="slidefade" data-rel="popup" text-align: "center">List Of Awards </a>
+		<div data-role="popup" id="pop1" data-dismissible="false">
+		  <a href= "#" data-rel = "back" class="ui-btn- ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+			<div data-role="header">
+			<h3>Objektif</h3>
+			</div>
+		<div role="main" class="ui-content" style="text-align:center">
+		 <ol>
+		 <li>Superbrands Malaysia 2003 / 2004  </li>
+		 <li>Asia Pacific e-EntrepreneurExcellence Award </li>
+		 <li>Golden Bull Award 2005</li>
+		 </ol>
+		 <a href="#" class="ui-btn-corner-all ui-shadow" data-rel="back"> Back </a>
+		 </div>		 
+		</div>
+			
+</div>	
+
+<div data-role="page" id="page4">
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">		
+			<h3> Contact Us </h3>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Name">
+			<li>				
+				<img src="gambar/zaki.jpg" width="200" />
+				<strong> Name : Zaki </strong> 
+				<p> <strong> Positon :</strong> Manager</p>
+				<p>								
+					<a href="tel=+60383164282" class="ui-btn ui-icon-phone ui-corner-all ui-btn-inline ui-btn-icon-left">Telefon</a>
+					<a href="sms://60133422264" class="ui-btn ui-icon-mail ui-corner-all ui-btn-inline ui-btn-icon-left"> SMS </a>
+					<a href="mailto:haryani.rasidi@jpa.gov.my" class="ui-btn ui-icon-action ui-corner-all ui-btn-inline ui-btn-icon-left"> Pesanan Email </a>								
+			</li>
+			</ul>
+	</div>		
+			
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">		
+			<h3> Contact Us </h3>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Name">
+			<li>				
+				<img src="gambar/Masri.jpg" width="200" />
+				<strong> Name : Masri</strong> 
+				<p> <strong> Positon :</strong> Sales Manager</p>
+				<p>								
+					<a href="tel=+60383164282" class="ui-btn ui-icon-phone ui-corner-all ui-btn-inline ui-btn-icon-left">Telefon</a>
+					<a href="sms://60133422264" class="ui-btn ui-icon-mail ui-corner-all ui-btn-inline ui-btn-icon-left"> SMS </a>
+					<a href="mailto:haryani.rasidi@jpa.gov.my" class="ui-btn ui-icon-action ui-corner-all ui-btn-inline ui-btn-icon-left"> Pesanan Email </a>								
+			</li>
+			</ul>
+	</div>		
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">		
+			<h3> Contact Us </h3>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Name">
+			<li>				
+				<img src="gambar/putri.jpg" width="200" />
+				<strong> Name : Putri </strong> 
+				<p> <strong> Positon :</strong> Asst.Manager</p>
+				<p>								
+					<a href="tel=+60383164282" class="ui-btn ui-icon-phone ui-corner-all ui-btn-inline ui-btn-icon-left">Telefon</a>
+					<a href="sms://60133422264" class="ui-btn ui-icon-mail ui-corner-all ui-btn-inline ui-btn-icon-left"> SMS </a>
+					<a href="mailto:haryani.rasidi@jpa.gov.my" class="ui-btn ui-icon-action ui-corner-all ui-btn-inline ui-btn-icon-left"> Pesanan Email </a>								
+			</li>
+			</ul>
+	</div>	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+			<li><a href = "#page2" data-icon="grid" data-transition="flow"> About Me </a></li>
+			<li><a href = "#page3" data-icon="star" class-"ui-btn-active ui-state-persist" data-transition="flow"> Promotion </a></li>
+			<li><a href = "#page4" data-icon="gear" data-transition="flow"> Contact Us </a></li>
+		</ul>
+	    </div>			
+	</div>
+			
+</div>	
+				
+</body>
+</html>	
+		
+					
+	
+	

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href ="css/MyTheme/ThemeBright.min.css" rel ="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+<script>
+$ (document ).bind("pageinit",function() {
+// Pengiraan menggunakan ajax
+		$('#hantar').click(function(){
+		$.ajax({
+			type: 'POST',
+			url : 'calendar.php',
+			data: $("#form1").serialize(),
+			success: function(data){
+		$('#data').html(data);
+		$('#try_ajax').popup('open');
+									}		
+	   }); 
+	   
+	});
+});
+</script>
+
+<form id="form1">
+	<div data-role="page' id="page1">
+		<div role="main" class="ui-content">
+		
+			<div data-role="fieldcontain">
+				<label>Nama : </label>
+				<input type="text" name="nama" id="nama" /><br />
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label>D.O.B : </label>
+				<input type="date" name="date" id="date" /><br />
+			</div>
+			<div class="ui-field-contain">
+				<fieldset data-role="controlgroup">
+					<legend>Jantina :</legend>
+					<input type="radio" name="radio-choice-v-1" id="radio-choice-v-1a" value="on" checked="checked">
+					<label for="radio-choice-v-1a">Lelaki</label>
+					<input type="radio" name="radio-choice-v-1" id="radio-choice-v-1b" value="off">
+					<label for="radio-choice-v-1b">Perempuan</label>
+				</fieldset>
+			</div>
+			
+			<div class="ui-field-contain">
+				<fieldset data-role="controlgroup">
+					<legend>Hobi : </legend>
+					<input type="checkbox" name="checkbox-v-1a" id="checkbox-v-1a">
+					<label for="checkbox-v-1a">Membaca</label>
+					<input type="checkbox" name="checkbox-v-1b" id="checkbox-v-1b">
+					<label for="checkbox-v-1b">Memasak</label>
+					<input type="checkbox" name="checkbox-v-1c" id="checkbox-v-1c">
+					<label for="checkbox-v-1c">Mengira</label>
+				</fieldset>
+			</div>
+
+			<div class="ui-field-contain">
+				<label for="select-custom-21">Pekerjaan :</label>
+					<select name="select-custom-21" id="select-custom-21" data-native-menu="false">
+						<option value="choose-one" data-placeholder="true">SILA PILIH:</option>
+						<option value="1">Kerajaan</option>
+						<option value="2">Swasta</option>
+						<option value="3">Kontrak</option>
+						<option value="4">Bersara</option>
+					</select>
+			</div>
+			
+			<div class="ui-field-contain">
+				<label for="textarea-1">Komen :</label>
+				<textarea cols="40" rows="8" name="textarea-1" id="textarea-1"></textarea>
+			</div>
+			
+			<input type="button" id="hantar" value="SIMPAN DATA">
+			
+			<div id="try_ajax" data-role="popup" data-dismissible="false" style="max-width:1000px;">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<div data-role="header">
+						<h3>Hasil</h3>
+					</div>
+				<div role="main" class="ui-content">
+					<div id="data" style="text-align:center">
+					Data Disini!!!
+					</div>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Berjaya Kemaskini</a>
+				</div>
+			</div>
+	
+		</div>
+	</div>	
+</form>
